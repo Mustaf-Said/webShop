@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/app/app.js" defer></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <section class="logo">
+          <h1>Nafaqo online</h1>
+          <ul>
+            <a href="http://127.0.0.1:5501/html/home.html#">
+              <li>Kulaabo<br />Bilawgii</li>
+            </a>
+            <a href="http://127.0.0.1:5501/html/caruurta.html#">
+              <li>Fiitamiinada<br />Caruurta</li>
+            </a>
+            <a href="#">
+              <li>Fiitamiinada<br />Raga</li>
+            </a>
+            <a href="http://127.0.0.1:5501/html/dumarka.html#">
+              <li>Fiitamiinada<br />Dumarka</li>
+            </a>
+          </ul>
+        </section>
+        <section>
+          <div id="cart">
+            <!--   <h3> -->
+            <svg
+              class="w-[40px] h-[40px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              fill=" #3381ad"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="#f6f9fa"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+              />
+            </svg>
+            <!-- Varukorg: -->
+
+            <span id="cart-count" style="position: absolute; padding: 0"
+              >0</span
+            >
+            <!-- varor -->
+            <!-- </h3> -->
+            <button onclick="showCart()">Visa Korgen</button>
+          </div>
+        </section>
+      </header>
+      <!-- Nav area---------------------------------------------------------------------------------------- -->
+      <nav>
+        <img id="slide" src="/img/vitamin/bregnet/1.jpeg" alt="photos" />
+      </nav>
+      <!-- Visas din Varukorg  ------------------------------------------>
+      <section id="cart-modal" class="hidden">
+        <h2>Din Varukorg</h2>
+        <div id="cart-items"></div>
+        <h3>Total: <span id="cart-total">0</span> kr</h3>
+        <div id="paypal-button-container"></div>
+        <button onclick="hideCart()">Stäng Varukorg</button>
+      </section>
+      <!-- Main Area------------------------------------------------------------ -->
+      <main>
+        <section id="products">
+          <div class="product">
+            <h2>Produkt 1</h2>
+            <p>Pris: 100 kr</p>
+            <button onclick="addToCart('Produkt 1', 100)">
+              Lägg i varukorg
+            </button>
+          </div>
+          <div class="product">
+            <h2>Produkt 2</h2>
+            <p>Pris: 150 kr</p>
+            <button onclick="addToCart('Produkt 2', 150)">
+              Lägg i varukorg
+            </button>
+          </div>
+          <!-- Lägg till fler produkter om du vill -->
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>

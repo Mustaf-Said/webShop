@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Webshop</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/app/app.js" defer></script>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=DIN_CLIENT_ID"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <section class="logo">
+          <h1>Online kanafaqayso</h1>
+          <ul>
+            <li>
+              <a href="#">Kulaabo<br />Bilawgii</a>
+            </li>
+
+            <li>
+              <a href="http://127.0.0.1:5501/html/caruurta.html#"
+                >Fiitamiinada<br />Caruurta
+              </a>
+            </li>
+
+            <li>
+              <a href="http://127.0.0.1:5501/html/raga.html#"
+                >Fiitamiinada<br />Raga
+              </a>
+            </li>
+
+            <li>
+              <a href="http://127.0.0.1:5501/html/dumarka.html#"
+                >Fiitamiinada<br />Dumarka</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="logo1">
+          <input
+            type="text"
+            name="search"
+            class="search"
+            placeholder="Search items her............"
+          />
+          <img src="/img/search.svg" alt="search" id="search" />
+        </section>
+      </header>
+      <!-- Nav Area------------------------------------------------------------------------------ -->
+      <nav>
+        <button type="button" class="prev" onclick="changeSlide(-1)">
+          &#10094;
+        </button>
+        <figure>
+          <figcaption>
+            <h4>Waxaa lagasameeyey</h4>
+            kaluunka kunool bada berbera oo sidabiiciya loogasoosaaray
+            nafaqadiisa wax kimikal ahna lagumadarin. kaluunka kunool bada
+            berbera oo sidabiiciya loogasoosaaray nafaqadiisa wax kimikal ahna
+            lagumadarin
+          </figcaption>
+          <img
+            alt="img"
+            src="/img/vitamin/oldWomen/1.jpeg"
+            class="gallery-image"
+            id="galleryImage"
+          />
+          <figcaption>
+            <h4>Faaiidooyinka lahelo</h4>
+            kaluunka kunool bada berbera oo sidabiiciya loogasoosaaray
+            nafaqadiisa wax kimikal ahna lagumadarin. kaluunka kunool bada
+            berbera oo sidabiiciya loogasoosaaray nafaqadiisa wax kimikal ahna
+            lagumadarin
+          </figcaption>
+        </figure>
+        <button type="button" class="next" onclick="changeSlide(1)">
+          &#10095;
+        </button>
+      </nav>
+
+      <!-- Main Area------------------------------------------------------------ -->
+      <main>
+        <section class="oneHome">
+          <img src="/img/vitamin/bregnet/1.jpeg" alt="F-uurka" />
+          <a href="http://127.0.0.1:5501/html/dumarka.html#">
+            <h3>Taabo halkan</h3>
+          </a>
+          <p>
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+            <strong class="txt1" onclick="hideFunction1()"
+              >Sii akhri....</strong
+            >
+          </p>
+          <p class="hidden" id="p1">
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+          </p>
+        </section>
+        <section class="twoHome">
+          <a href="http://127.0.0.1:5501/html/raga.html#">
+            <h3>Taabo halkan</h3>
+          </a>
+          <p>
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+            <strong onclick="hideFunction2()">Sii akhri....</strong>
+          </p>
+          <p class="hidden" id="p2">
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+          </p>
+          <img src="/img/vitamin/man/1.jpeg" alt="F-qofwayn" />
+        </section>
+        <section class="threHome">
+          <img src="/img/vitamin/childeren/1.jpeg" alt="F-caruurta" />
+          <a href="http://127.0.0.1:5501/html/dumarka.html#">
+            <h3>Taabo halkan</h3>
+          </a>
+          <p>
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+            <strong onclick="hideFunction3()">Sii akhri....</strong>
+          </p>
+          <p class="didden" id="p3">
+            Fiitamiinadu waxay kaacaawinayaaan waxbadan oo jidhkaaga kadhiman oo
+            jidhka daruuri u ah. Sidaa daraadeed naftaada daryeel oo marwalba
+            wixii kadhiman qaado.
+          </p>
+        </section>
+      </main>
+      <!-- Aside Area------------------------------------------------------------ -->
+      <aside>
+        <section>
+          <img src="/img/f1.jpg" alt="f1" id="face1" />
+          <h6>Name: O Ismael</h6>
+          <p>
+            Websidkani waa med 100% aad uwanaagsan waxaad kadalbatid dhakhso
+            ayaad uhelaysaa.
+          </p>
+          <img src="/img/5.svg" alt="s5" />
+        </section>
+
+        <section>
+          <img src="/img/f5.jpg" alt="f5" id="face2" />
+          <h6>Name: A Ciise</h6>
+          <p>
+            Websidkan shaqaalihiisu waa kuwo aad aqoontoodu usarayso sifiicana
+            kuusoodhawaynaya oo ku caawinaya.
+          </p>
+          <img src="/img/5.svg" alt="s5" />
+        </section>
+
+        <section>
+          <img src="/img/f2.jpg" alt="f1" id="face3" />
+          <h6>Name: A Ali</h6>
+          <p>
+            Websidkani fitamiino tayoleh ayuu iibiyaa waan idinkula talinlahaa
+            inaad ka adeegataan.
+          </p>
+          <img src="/img/4.svg" alt="s4" />
+        </section>
+      </aside>
+      <!-- Footer  Area------------------------------------------------------------ -->
+      <footer></footer>
+    </div>
+  </body>
+</html>
