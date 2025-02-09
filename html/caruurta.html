@@ -30,6 +30,7 @@
         <section>
           <div id="cart">
             <!--   <h3> -->
+            <span id="cart-count">0</span>
             <svg
               class="w-[40px] h-[40px] text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -49,12 +50,9 @@
             </svg>
             <!-- Varukorg: -->
 
-            <span id="cart-count" style="position: absolute; padding: 0"
-              >0</span
-            >
             <!-- varor -->
             <!-- </h3> -->
-            <button onclick="showCart()">Visa Korgen</button>
+            <button type="button" onclick="showCart()">Visa Korgen</button>
           </div>
         </section>
       </header>
@@ -68,7 +66,7 @@
         <div id="cart-items"></div>
         <h3>Total: <span id="cart-total">0</span> kr</h3>
         <div id="paypal-button-container"></div>
-        <button onclick="hideCart()">Stäng Varukorg</button>
+        <button type="button" onclick="hideCart()">Stäng Varukorg</button>
       </section>
       <!-- Main Area------------------------------------------------------------ -->
       <main>
@@ -76,14 +74,14 @@
           <div class="product">
             <h2>Produkt 1</h2>
             <p>Pris: 100 kr</p>
-            <button onclick="addToCart('Produkt 1', 100)">
+            <button type="button" onclick="addToCart('Produkt 1', 100)">
               Lägg i varukorg
             </button>
           </div>
           <div class="product">
             <h2>Produkt 2</h2>
             <p>Pris: 150 kr</p>
-            <button onclick="addToCart('Produkt 2', 150)">
+            <button type="button" onclick="addToCart('Produkt 2', 150)">
               Lägg i varukorg
             </button>
           </div>

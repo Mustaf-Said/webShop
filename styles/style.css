@@ -7,6 +7,7 @@ body {
   min-width: 655px;
   min-width: 700px;
   font-family: "Playfair Display", serif;
+
   h2 {
     text-align: center;
     margin-top: 6em;
@@ -114,6 +115,13 @@ span {
     border: 3px solid rgb(255, 255, 255);
     border-radius: 9px;
   }
+  svg{
+    padding: 7px;
+  }
+  span {
+    position: absolute;
+      
+  }
 }
 
 /* Nav stylning---------------------------------------- */
@@ -155,14 +163,15 @@ nav {
 }
 #cart-modal {
   position: absolute;
-  top: 16%;
+  top: 30%;
   right: 0;
+  z-index: 1;
   /* transform: translate(-50%, -20%); */
-  padding: 1em;
+  padding: 1rem;
   background-color: rgb(255, 255, 255);
   border: 1px solid #333;
   width: 300px;
-  /* color: #333; */
+  color: #333;
 }
 main {
   grid-area: main;
